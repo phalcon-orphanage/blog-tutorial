@@ -12,7 +12,7 @@ class PostsController extends Phalcon\Mvc\Controller
 	{
 
 		//actions which we want to keep from outside access
-		$restricted = array('create', 'delete', 'edit', 'new');
+		$restricted = array('create', 'delete', 'update', 'new');
 
 		//auth token
 		$auth = $this->session->get('auth');
