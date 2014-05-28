@@ -1,7 +1,7 @@
 <?php
 
 
-class Posts extends \Phalcon\Mvc\Model 
+class Posts extends \Phalcon\Mvc\Model
 {
 
     /**
@@ -51,7 +51,7 @@ class Posts extends \Phalcon\Mvc\Model
      * Initializer method for model.
      */
     public function initialize()
-    {        
+    {
         $this->belongsTo("users_id", "Users", "id");
         $this->belongsTo("categories_id", "Categories", "id");
     }
